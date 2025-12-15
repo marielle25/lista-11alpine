@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js</title>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>   
+</head>
+<body>
+    <div x-data="{preco: 10, qtd: 5,}">
+     <p x-text="preco * qtd"></p>
+    </div>
+
+    <button @click="qtd++">
+      Aumentar quantidade
+    </button>
+</body>
+</html>
